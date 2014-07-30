@@ -9,11 +9,11 @@
 #import "MessagesViewController.h"
 
 @interface MessagesViewController ()<UITextFieldDelegate>
-@property (strong, nonatomic) IBOutlet UITextField *writeTextField;
-@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (strong, nonatomic) IBOutlet UIView *containerView;
-@property (strong, nonatomic) PFUser *currentUser;
-@property (strong, nonatomic) PFObject *message;
+@property (weak, nonatomic) IBOutlet UITextField *writeTextField;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (nonatomic) PFUser *currentUser;
+@property (nonatomic) PFObject *message;
 @property CGFloat containerViewHeight;
 
 @end

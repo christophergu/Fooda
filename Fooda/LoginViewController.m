@@ -11,9 +11,9 @@
 #import <Parse/Parse.h>
 
 @interface LoginViewController ()
-@property (strong, nonatomic) IBOutlet UITextField *emailTextField;
-@property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
-@property (strong, nonatomic) IBOutlet UIButton *signInButton;
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UIButton *signInButton;
 
 @end
 

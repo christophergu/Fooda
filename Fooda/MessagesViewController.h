@@ -10,8 +10,8 @@
 #import <Parse/Parse.h>
 
 @interface MessagesViewController : UIViewController
-@property (strong, nonatomic) PFObject *conversation;
-@property (strong, nonatomic) NSString *chattersString;
+@property (nonatomic) PFObject *conversation;
+@property (nonatomic) NSString *chattersString;
 @property BOOL viewingMessages;
 
 @end

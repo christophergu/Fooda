@@ -14,20 +14,20 @@
 #import <MapKit/MapKit.h>
 
 @interface MainViewController ()<CLLocationManagerDelegate, MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate, UITabBarDelegate>
-@property (strong, nonatomic) CLLocationManager *locationManager;
-@property (strong, nonatomic) CLLocation* currentLocation;
-@property (strong, nonatomic) IBOutlet MKMapView *mapView;
-@property (strong, nonatomic) IBOutlet UIView *viewForMapElements;
-@property (strong, nonatomic) IBOutlet UIBarButtonItem *gpsBarButton;
-@property (strong, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) IBOutlet UITabBar *tabBar;
-@property (strong, nonatomic) IBOutlet UIButton *writeButtonMessage;
-@property (strong, nonatomic) NSArray *driverArray;
-@property (strong, nonatomic) NSMutableArray *driverActiveArray;
-@property (strong, nonatomic) NSArray *conversationArray;
-@property (strong, nonatomic) NSMutableArray *addToChatMutableArray;
-@property (strong, nonatomic) PFUser *currentUser;
-@property (strong, nonatomic) PFObject *conversation;
+@property (nonatomic) CLLocationManager *locationManager;
+@property (nonatomic) CLLocation* currentLocation;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UIView *viewForMapElements;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *gpsBarButton;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITabBar *tabBar;
+@property (weak, nonatomic) IBOutlet UIButton *writeButtonMessage;
+@property (nonatomic) NSArray *driverArray;
+@property (nonatomic) NSMutableArray *driverActiveArray;
+@property (nonatomic) NSArray *conversationArray;
+@property (nonatomic) NSMutableArray *addToChatMutableArray;
+@property (nonatomic) PFUser *currentUser;
+@property (nonatomic) PFObject *conversation;
 @property int viewMessageIndexPathRow;
 
 @end
